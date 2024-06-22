@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
 
-# 设置tokenn访问权限
+# 设置token访问权限
 permissions:
   contents: read
   pages: write
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # 使用最新版本的 actions/checkout
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
       - name: Setup Node
@@ -30,10 +30,8 @@ jobs:
         with:
           node-version: 20
           cache: npm # 设置缓存
-      - name: Install specific npm version
-        run: npm install -g npm@10.5.0
       - name: Setup Pages
-        uses: actions/configure-pages@v3  # 在工作流程自动配置GithubPages
+        uses: actions/configure-pages@v4  # 使用最新版本的 actions/configure-pages
       - name: Install dependencies
         run: npm install # 安装依赖
       - name: Build with react-hok-demo
@@ -42,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2  # 上传构建产物
         with:
-          path: /build
+          path: ./build  # 确保路径正确
 
   # 部署工作
   deploy:
