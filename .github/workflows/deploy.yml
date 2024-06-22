@@ -30,6 +30,8 @@ jobs:
         with:
           node-version: 20
           cache: npm # 设置缓存
+      - name: Install specific npm version
+        run: npm install -g npm@10.5.0
       - name: Setup Pages
         uses: actions/configure-pages@v3  # 在工作流程自动配置GithubPages
       - name: Install dependencies
