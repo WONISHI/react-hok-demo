@@ -3,6 +3,7 @@ import Mock from 'mockjs'
 
 // 图表数据
 let List = []
+// eslint-disable-next-line
 export default {
   getStatisticalData: () => {
     //Mock.Random.float 产生随机数100到8000之间 保留小数 最小0位 最大0位

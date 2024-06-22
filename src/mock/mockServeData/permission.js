@@ -1,4 +1,5 @@
 import Mock from 'mockjs'
+// eslint-disable-next-line
 export default {
   getMenu: config => {
     const { username, password } = JSON.parse(config.body)

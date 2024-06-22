@@ -31,7 +31,7 @@ for (let i = 0; i < count; i++) {
     })
   )
 }
-
+// eslint-disable-next-line
 export default {
   /**
    * 获取列表
@@ -118,6 +118,7 @@ export default {
   updateUser: config => {
     const { id, name, addr, age, birth, sex } = JSON.parse(config.body)
     const sex_num = parseInt(sex)
+    // eslint-disable-next-line
     List.some(u => {
       if (u.id === id) {
         u.name = name

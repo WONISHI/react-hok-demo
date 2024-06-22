@@ -115,6 +115,7 @@ export default function User() {
   };
   useEffect(() => {
     getUserlist();
+    // eslint-disable-next-line
   }, [listData]);
   return (
     <div className="user-content">

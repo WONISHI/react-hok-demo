@@ -48,5 +48,5 @@ class HttpRequest {
   }
   
 }
-//@ts-ignore
+// eslint-disable-next-line
 export default new HttpRequest(baseUrl);
