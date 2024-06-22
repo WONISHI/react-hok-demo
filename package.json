@@ -2,6 +2,7 @@
   "name": "hok",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://wonishi.github.io/react-hok-demo",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.4",
     "@testing-library/jest-dom": "^5.17.0",
