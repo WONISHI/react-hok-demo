@@ -1,0 +1,13 @@
+.ant-layout-header{
+    display: flex;
+    justify-content: space-between;
+}
+.ant-image{
+    width: 64px !important;
+    margin-right: 16px;
+}
+.ant-image-img{
+    width: 52px !important;
+    height: 52p !important;
+    border-radius: 50%;
+}

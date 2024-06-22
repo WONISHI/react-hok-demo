@@ -1,0 +1,8 @@
+.search-contnet{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.search-contnet .search-btn .ant-form .ant-form-item-control-input-content{
+    display: flex;
+}

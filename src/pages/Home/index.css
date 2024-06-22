@@ -1,0 +1,85 @@
+.ant-row,.home-contents {
+    height: 100%;
+}
+.ant-col-8{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.home-contents .user {
+  margin-bottom: 16px;
+}
+.home-contents .phone{
+flex:1;
+}
+.home-contents .phone .ant-card-body{
+    height: 100%;
+    width: 100%;
+}
+.home-contents .phone .ant-card-body .ant-table-wrapper{
+    width: 100%;
+}
+.home-contents .user .ant-card-body {
+  display: flex;
+  flex-direction: column;
+}
+.home-contents .ant-card-body .top {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.home-contents .ant-card-body .top .user-info {
+  display: flex;
+  flex-direction: column;
+}
+.home-contents .ant-card-body .top .user-info .account {
+  font-size: 32px;
+}
+.home-contents .ant-card-body .bottom {
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.num-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-left: 16px;
+}
+.num-content .ant-card .ant-card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  height: 100px;
+}
+.ion-box {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+}
+.ion-box svg{
+    color:#fff;
+    height: 24px;
+    width: 24px;
+}
+.ant-card .ant-card-body .detail {
+  display: flex;
+  flex-direction: column;
+}
+.ant-card .ant-card-body .detail .font{
+    font-size: 24px;
+}
+.ant-card .ant-card-body .detail .name{
+    color:#999;
+}
+.echart-content{
+    display: flex;
+    margin-top: 40px;
+    margin-left:16px;
+}
