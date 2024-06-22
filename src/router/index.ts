@@ -44,4 +44,4 @@ const routes = [
     ],
   },
 ];
-export default createBrowserRouter(routes);
+export default createBrowserRouter(routes,{ basename: '/react-hok-demo' });
