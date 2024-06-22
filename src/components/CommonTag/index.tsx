@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Tag, Space } from "antd";
 import { useSelector,useDispatch } from "react-redux";
 import {closeTag,setcurrentTag} from '../../store/reduces/tag'

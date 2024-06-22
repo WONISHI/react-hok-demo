@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import * as Icon from "@ant-design/icons";
 import Menuconfig from "../../config";
 import type { RouteMune } from "../../config";
@@ -26,7 +26,7 @@ export default function CommonAside({ collapsed }: CommonAsideProps) {
         key: item.path,
         icon: iconParse(item.icon),
         label: item.label,
-        children: item.children.map((cli) => {
+        children: item.children.map((cli:any):any => {
           return {
             key: cli.path,
             icon: iconParse(cli.icon),
@@ -44,6 +44,7 @@ export default function CommonAside({ collapsed }: CommonAsideProps) {
   });
   const changeMenu = (e: any) => {
     let data: any = {};
+    // eslint-disable-next-line
     Menuconfig.map((item: RouteMune) => {
       if (item.path === e.keyPath[e.keyPath.length - 1]) {
         data = item;

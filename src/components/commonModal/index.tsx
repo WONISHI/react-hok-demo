@@ -30,7 +30,7 @@ export default function CommonModal({
   useEffect(() => {
     currentRow.birth = dayjs(currentRow.birch);
     form.setFieldsValue(currentRow);
-  }, [currentRow]);
+  }, [currentRow,form]);
   return (
     <>
       <Modal

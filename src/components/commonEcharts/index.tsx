@@ -67,6 +67,7 @@ export default function CommonEcharts({ style, chartData, isAxisChart=true }) {
       options = normalOption;
     }
     echartObj.current.setOption(options);
+    // eslint-disable-next-line
   }, [chartData]);
   
   return (
